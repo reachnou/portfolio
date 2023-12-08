@@ -16,13 +16,13 @@ body {
   overflow-x: hidden;
 }
 
-/* main {
+main {
   background: #151418;
-  background-image: url('../public/images/blob-haikei.svg');
+  /* background-image: url('../public/blob-haikei.svg'); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-} */
+}
 
 a {
   text-decoration: none;

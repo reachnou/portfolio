@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import Dropdown from "../Dropdown/Dropdown";
-// import Header from "../Header/Header";
+import Dropdown from "../Dropdown/Dropdown";
+import Header from "../Header/Header";
 import {
   HeroContainer,
   HeroWrapper,
@@ -9,7 +9,7 @@ import {
   Image,
   ScrollDown,
   ScrollLink,
-} from "./styles";
+} from "./HeroElements";
 import { TypeAnimation } from 'react-type-animation';
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -23,8 +23,8 @@ function Hero() {
   };
   return (
     <main>
-      {/* <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Header toggle={toggle} /> */}
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Header toggle={toggle} />
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
@@ -94,7 +94,7 @@ function Hero() {
           <HeroRight>
             <ScrollAnimation animateIn="fadeIn">
               <Image
-                src="/man-svgrepo-com.svg"
+                src="/images/youngman.png"
                 alt="man-svgrepo"
               />
             </ScrollAnimation>
@@ -105,7 +105,7 @@ function Hero() {
           <ScrollLink>
             Scroll down
             <img
-              src="/scroll-down.svg"
+              src="/images/scroll-down.svg"
               alt="scroll-down"
             />
           </ScrollLink>

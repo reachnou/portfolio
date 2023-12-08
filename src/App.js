@@ -1,12 +1,10 @@
-import Main from "./components/Main/Main";
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-    return (
-        <>
-            <Main/>
-        </>
-    );
+  return (
+      <Home />
+  );
 }
 
 export default App;
-
