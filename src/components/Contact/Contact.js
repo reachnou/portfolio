@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { ContactWrapper, Email } from "./ContactElements";
-import { MdContentCopy } from "react-icons/md";
-import { IconButton, Tooltip } from "@mui/material";
-import Zoom from '@mui/material/Zoom';
+// import { MdContentCopy } from "react-icons/md";
+// import { IconButton, Tooltip } from "@mui/material";
+// import Zoom from '@mui/material/Zoom';
 
 import ScrollAnimation from "react-animate-on-scroll";
+import ContactForm from "./ContactForm";
 function Contact() {
-  const [showTooltip, setShowTooltip] = useState(false);
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText("reach.nou77@gmail.com");
-    setShowTooltip(true);
-    setTimeout(() => {
-      setShowTooltip(false);
-    }, 700);
-  };
+  // const [showTooltip, setShowTooltip] = useState(false);
+  // const copyToClipboard = () => {
+  //   navigator.clipboard.writeText("reach.nou77@gmail.com");
+  //   setShowTooltip(true);
+  //   setTimeout(() => {
+  //     setShowTooltip(false);
+  //   }, 700);
+  // };
 
   return (
     <ContactWrapper id="contact">
@@ -22,7 +23,7 @@ function Contact() {
         <div className="SectionTitle">Get In Touch</div>
         <ScrollAnimation animateIn="fadeIn" >
           <div className="BigCard">
-            <Email>
+            {/* <Email>
               <div style={{ display: 'flex', alignItems: 'center', columnGap: '20px', rowGap: '10px', flexWrap: 'wrap', justifyContent: 'center' }} >
                 <span>reach.nou77@gmail.com</span>
                 <Tooltip
@@ -51,7 +52,8 @@ function Contact() {
               >
                 Send Email
               </a>
-            </Email>
+            </Email> */}
+            <ContactForm />
           </div>
         </ScrollAnimation>
 

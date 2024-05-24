@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
 import ParticleBackground from "../components/Background/Main";
+import Blog from "../components/Blog/Blog";
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
       <Hero />
       <Projects />
       <About />
+      <Blog />
       <Contact />
       <FixSocialIcon />
       <Footer />

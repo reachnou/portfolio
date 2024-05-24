@@ -6,10 +6,10 @@ const Header = ({ toggle }) => {
     <div className="Container" style={{padding: 0}}>
       <Nav>
         <Logo to="/">
-          <img
-            src="/logo.png"
+          {/* <img
+            src="../../images/logo.png"
             alt="logo"
-          />
+          /> */}
         </Logo>
         <NavMenu>
           <NavLink className="menu-item" to="projects">
@@ -17,6 +17,9 @@ const Header = ({ toggle }) => {
           </NavLink>
           <NavLink className="menu-item" to="about">
             About
+          </NavLink>
+          <NavLink className="menu-item" to="blogs">
+            Blogs
           </NavLink>
           <NavLink className="menu-item" to="contact">
             Contact
